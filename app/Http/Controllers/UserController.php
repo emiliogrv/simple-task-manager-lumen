@@ -119,10 +119,14 @@ class UserController extends Controller {
 	 * @return Void
 	 */
 	public function destroy($id) {
-		$user = User::findOrFail($id);
-		$user->delete();
+		if (User::count() > 1) {
+			$user = User::findOrFail($id);
+			$user->delete();
 
-		return response()->json('', 204);
+			return response()->json('', 204);
+		}
+
+		return response()->json(['error' => 'Only one user left'], 422);
 	}
 
 	/**
