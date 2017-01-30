@@ -27,20 +27,22 @@ git clone https://github.com/emiliogrv/simple-task-manager-lumen.git
 
 3 - Copia el archivo .env.example a .env
 
-4 - Ejecuta composer update:
+4 - Abre el archivo `.env` y configura lo siguiente con tus datos:
+
+```shell
+APP_KEY=
+
+DB_DATABASE=db_db
+DB_USERNAME=db_user
+DB_PASSWORD=db_pass
+```
+
+5 - Ejecuta composer update:
 
 ```shell
 $ composer update
 ```
 
-5 - Abre el archivo `.env` y configura lo siguiente con tus datos:
-
-```shell
-APP_KEY=
-DB_DATABASE=db_db
-DB_USERNAME=db_user
-DB_PASSWORD=db_pass
-```
 El APP_KEY debe ser una cadena de 32 caracteres
 
 6 - Ejecuta:
