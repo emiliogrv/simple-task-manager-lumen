@@ -37,15 +37,9 @@ DB_USERNAME=db_user
 DB_PASSWORD=db_pass
 ```
 
-5 - Ejecuta composer update:
-
-```shell
-$ composer update
-```
-
 El APP_KEY debe ser una cadena de 32 caracteres
 
-6 - Ejecuta:
+5 - Ejecuta:
 
 ```shell
 $ php artisan jwt:secret

@@ -38,13 +38,7 @@ DB_PASSWORD=db_pass
 ```
 The APP_KEY must be a string of 32 characters
 
-5 - Run composer update:
-
-```shell
-$ composer update
-```
-
-6 - Execute:
+5 - Execute:
 
 ```shell
 $ php artisan jwt:secret
